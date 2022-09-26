@@ -9,5 +9,9 @@ require_relative 'config/application'
 Rails.application.load_tasks
 
 RuboCop::RakeTask.new do |t|
-  t.options = ['--autocorrect-all']
+  t.options = %w[ --autocorrect-all
+                  --format=emacs
+                  --force-exclusion
+                  --display-cop-names
+                  --config ./.rubocop.yml ]
 end

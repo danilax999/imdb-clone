@@ -1,4 +1,15 @@
 require: rubocop-rails
 
 Layout/LineLength:
-  Max: 81
+  Max: 90
+
+Metrics/MethodLength:
+  Max: 20
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  SafeAutoCorrect: true
+
+Style/Documentation:
+  Enabled: false
+

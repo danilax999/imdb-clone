@@ -28,7 +28,8 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '3f088a39c3cc153e4cdce1cd60866ea36e6d0452bcd4a7a98a130f6b6501352cc7a9ac4d2705edac4153a906dda664b4b7461d80c69039a408d4779dec928f45'
+  # config.secret_key = '3f088a39c3cc153e4cdce1cd60866ea36e6d0452bcd4a7a98a
+  # 130f6b6501352cc7a9ac4d2705edac4153a906dda664b4b7461d80c69039a408d4779dec928f45'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -66,7 +67,8 @@ Devise.setup do |config|
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
   # find_for_authentication method and considered in your model lookup. For instance,
-  # if you set :request_keys to [:subdomain], :subdomain will be used on authentication.
+  # if you set :request_keys to [:subdomain], :subdomain will be used on
+  # authentication.
   # The same considerations mentioned for authentication_keys also apply to request_keys.
   # config.request_keys = []
 
@@ -90,7 +92,8 @@ Devise.setup do |config|
   # It can be set to an array that will enable http authentication only for the
   # given strategies, for example, `config.http_authenticatable = [:database]` will
   # enable it only for database authentication.
-  # For API-only applications to support authentication "out-of-the-box", you will likely want to
+  # For API-only applications to support authentication "out-of-the-box", you
+  # will likely want to
   # enable this with :database unless you are using a custom strategy.
   # The supported strategies are:
   # :database      = Support basic authentication with authentication key + password
@@ -141,7 +144,8 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 12
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '7f358a902d19c2e49bbe3e4b0c13e8992190175e8d716010f039fba3218b6f31edf1c4de6f8a6cad5f87308d1de058914c8c22268b3c48f6186616da64dd1def'
+  # config.pepper = '7f358a902d19c2e49bbe3e4b0c13e8992190175e8d716010f039f
+  # ba3218b6f31edf1c4de6f8a6cad5f87308d1de058914c8c22268b3c48f6186616da64dd1def'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -313,7 +317,8 @@ Devise.setup do |config|
   # config.omniauth_path_prefix = '/my_engine/users/auth'
 
   # ==> Turbolinks configuration
-  # If your app is using Turbolinks, Turbolinks::Controller needs to be included to make redirection work correctly:
+  # If your app is using Turbolinks, Turbolinks::Controller needs to be
+  # included to make redirection work correctly:
   #
   # ActiveSupport.on_load(:devise_failure_app) do
   #   include Turbolinks::Controller
@@ -322,6 +327,7 @@ Devise.setup do |config|
   # ==> Configuration for :registerable
 
   # When set to false, does not sign a user in automatically after their password is
-  # changed. Defaults to true, so a user is signed in automatically after changing a password.
+  # changed. Defaults to true, so a user is signed in automatically after
+  # changing a password.
   # config.sign_in_after_change_password = true
 end
