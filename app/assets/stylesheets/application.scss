@@ -1,0 +1,25 @@
+@import "bootstrap";
+
+.form {
+  width: 100%;
+
+  .field {
+    @extend .my-1;
+  }
+
+  .actions {
+    @extend .my-2;
+  }
+}
+
+.form-s {
+  max-width: 350px;
+}
+
+.form-m {
+  max-width: 500px;
+}
+
+.form-l {
+  max-width: 800px;
+}

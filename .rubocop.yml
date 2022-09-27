@@ -13,3 +13,5 @@ Style/FrozenStringLiteralComment:
 Style/Documentation:
   Enabled: false
 
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
