@@ -6,6 +6,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
+  has_many :ratings,
+           inverse_of: :user,
+           dependent: :destroy
+
   validates :fullname,
             presence: true,
             length: { minimum: 2 }

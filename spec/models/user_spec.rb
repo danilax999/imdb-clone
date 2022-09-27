@@ -5,6 +5,10 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   subject { build :user }
 
+  describe :associations do
+    it { should have_many :ratings }
+  end
+
   describe :validations do
     it { should validate_presence_of :fullname }
     it { should validate_length_of(:fullname).is_at_least(2) }
