@@ -23,6 +23,9 @@ PreCommit:
    on_warn: fail # Treat all warnings as failures
    problem_on_unmodified_line: ignore
 
+   CapitalizedSubject:
+     enabled: false
+
 #  TrailingWhitespace:
 #    enabled: true
 #    exclude:
