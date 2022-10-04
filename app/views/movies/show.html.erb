@@ -1,0 +1,10 @@
+<div id="movie-container" class="container-md d-flex flex-row mt-3">
+  <div>
+    <div class="movie-poster" style="max-width: 600px;"><%= render 'poster', movie: @movie %></div>
+    <div class="movie-rating"><%= render 'rating', movie: @movie %></div>
+  </div>
+  <div class="ms-3">
+    <h3 class="movie-title"><%= @movie.title %></h3>
+    <div class="movie-text"><%= @movie.text %></div>
+  </div>
+</div>

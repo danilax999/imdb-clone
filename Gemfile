@@ -91,3 +91,9 @@ end
 gem 'devise', '~> 4.8'
 
 gem 'bootstrap', '~> 5.2'
+
+gem 'cancancan', '~> 3.4'
+
+gem 'octicons', '~> 17.6'
+
+gem 'octicons_helper', '~> 17.6'

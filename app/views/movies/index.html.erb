@@ -1,0 +1,19 @@
+<div id="movies-container" class="mt-3">
+  <% @movies.each do |movie| %>
+    <a href="<%= movie_path movie %>" class="text-decoration-none text-reset">
+      <div class="movie-card">
+        <div class="movie-poster">
+          <%= render 'poster', movie: %>
+        </div>
+        <div class="movie-card-body">
+          <h5 class="movie-title">
+            <%= movie.title %>
+          </h5>
+          <div class="movie-rating">
+            <%= render 'rating', movie: %>
+          </div>
+        </div>
+      </div>
+    </a>
+  <% end %>
+</div>

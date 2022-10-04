@@ -23,3 +23,46 @@
 .form-l {
   max-width: 800px;
 }
+
+#movies-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 5px;
+  max-width: 1200px;
+}
+
+@media (max-width: 900px) {
+  #movies-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  #movies-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 300px) {
+  #movies-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.movie-card {
+  max-width: 400px;
+  max-height: 600px;
+  border: 1px $gray-200 solid;
+  border-radius: 15px;
+  transition: transform ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+
+  &:hover {
+    transform: scale(1.02, 1.02);
+    box-shadow: 0 0 15px $gray-600;
+  }
+}
+
+.movie-card-body {
+  padding: 5px;
+}

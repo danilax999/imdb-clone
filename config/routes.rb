@@ -6,5 +6,8 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
-  # root "articles#index"
+  resources :movies, only: %i[index show]
+  post '/movies/:id/rate', to: 'movies#rate'
+
+  root 'movies#index'
 end

@@ -16,6 +16,8 @@ class Movie < ApplicationRecord
   validates :title, presence: true
 
   def rating
-    ratings.map(&:value).sum / ratings.size
+    return 0 if ratings.empty?
+
+    ratings.map(&:value).sum.to_f / ratings.size
   end
 end

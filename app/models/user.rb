@@ -17,4 +17,10 @@ class User < ApplicationRecord
   validates :email,
             presence: true,
             uniqueness: { case_sensitive: true }
+
+  def rate_movie(movie, value)
+    Rating.find_or_initialize_by movie:, user: self do |rating|
+      rating.value = value
+    end
+  end
 end

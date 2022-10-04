@@ -1,13 +1,22 @@
 <% if flash[:notice].present? %>
   <div class="alert alert-info w-100">
-    <%# <span class="glyphicon glyphicon-info-sign"></span> %>
+    <%= octicon 'info' %>
     <%= flash[:notice] %>
   </div>
 <% end %>
 
 <% if flash[:alert].present? %>
   <div class="alert alert-danger w-100">
-    <%# <span class="glyphicon glyphicon-exclamation-sign"></span> %>
+    <%= octicon 'alert' %>
     <%= flash[:alert] %>
   </div>
+<% end %>
+
+<% if flash[:errors].present? %>
+  <% flash[:errors].full_messages.each do |msg| %>
+    <div class="alert alert-danger w-100">
+      <%= octicon 'info' %>
+      <%= msg %>
+    </div>
+  <% end %>
 <% end %>

@@ -13,4 +13,8 @@ class Category < ApplicationRecord
            inverse_of: :categories
 
   validates :name, presence: true, uniqueness: true
+
+  def add_movie(movie)
+    movies << movie
+  end
 end

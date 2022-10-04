@@ -127,6 +127,7 @@ GEM
       popper_js (>= 2.11.6, < 3)
       sassc-rails (>= 2.0.0)
     builder (3.2.4)
+    cancancan (3.4.0)
     capybara (3.37.1)
       addressable
       matrix
@@ -203,6 +204,11 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.8-x86_64-linux)
       racc (~> 1.4)
+    octicons (17.6.0)
+    octicons_helper (17.6.0)
+      actionview
+      octicons (= 17.6.0)
+      railties
     orm_adapter (0.5.0)
     overcommit (0.59.1)
       childprocess (>= 0.6.3, < 5)
@@ -338,6 +344,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   bootstrap (~> 5.2)
+  cancancan (~> 3.4)
   capybara
   debug
   devise (~> 4.8)
@@ -345,6 +352,8 @@ DEPENDENCIES
   faker
   importmap-rails
   jbuilder
+  octicons (~> 17.6)
+  octicons_helper (~> 17.6)
   overcommit
   puma (~> 5.0)
   rails (~> 7.0.4)
