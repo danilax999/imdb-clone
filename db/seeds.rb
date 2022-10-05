@@ -27,3 +27,8 @@ categories = Constants::MOVIE_CATEGORIES.map { |name| Category.find_or_create_by
     category.save!
   end
 end
+
+FactoryBot.create :user,
+                  email: 'test@email.com',
+                  password: 'password',
+                  password_confirmation: 'password'
