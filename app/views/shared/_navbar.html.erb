@@ -1,7 +1,9 @@
 <nav class="navbar navbar-light navbar-expand-md bg-light">
   <div class="container-fluid">
-    <div class="navbar-nav d-flex w-100 justify-content-between">
-      <div id="nav-left" class="d-flex flex-row align-items-center"></div>
+    <div class="navbar-nav d-flex flex-row w-100 justify-content-between">
+      <div id="nav-left" class="d-flex flex-row align-items-center">
+        <%= link_to 'Movies', movies_path, class: 'text-decoration-none text-reset px-1 py-2 mx-1' %>
+      </div>
       <div id="nav-center"></div>
       <div id="nav-right">
         <% if user_signed_in? %>
