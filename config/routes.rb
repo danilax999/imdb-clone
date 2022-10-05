@@ -9,5 +9,7 @@ Rails.application.routes.draw do
   resources :movies, only: %i[index show]
   post '/movies/:id/rate', to: 'movies#rate'
 
+  resources :users, only: %i[destroy]
+
   root 'movies#index'
 end
